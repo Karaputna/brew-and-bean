@@ -12,106 +12,67 @@
 </head>
 <body>
   <a href="#main">Перейти до основного вмісту</a>
+
   <header>
-    <p><a href="index.html">Brew &amp; Bean</a></p>
-    <nav aria-label="Головна навігація">
-      <ul>
-          <li><a href="index.html">Головна</a></li>
-          <li><a href="menu.html" aria-current="page">Меню</a></li>
-          <li><a href="cart.html">Кошик</a></li>
-          <li><a href="contacts.html">Контакти</a></li>
-      </ul>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Меню</button>
+
+    <nav id="site-nav" aria-label="Головна навігація">
+      <a href="index.html">Головна</a>
+      <a href="menu.html">Меню</a>
+      <a href="cart.html">Кошик (<span data-cart-count>0</span>)</a>
     </nav>
+
+    <button type="button" data-theme-toggle></button>
   </header>
 
   <main id="main">
     <h1>Меню</h1>
-    <form action="menu.html" method="get" role="search">
+
+    <div class="filters" role="search">
       <p>
         <label for="search">Пошук за назвою</label>
-        <input type="search" id="search" name="q" placeholder="Наприклад, лате">
+        <input type="search" id="search" placeholder="Наприклад, лате">
       </p>
       <p>
         <label for="category">Категорія</label>
-        <select id="category" name="category">
+        <select id="category">
           <option value="">Усі</option>
-          <option value="coffee">Кава</option>
-          <option value="bakery">Випічка</option>
+          <option value="Кава">Кава</option>
+          <option value="Чай">Чай</option>
+          <option value="Десерти">Десерти</option>
+          <option value="Сніданки">Сніданки</option>
         </select>
       </p>
-      <button type="submit">Знайти</button>
-    </form>
+      <p>
+        <label for="sort">Сортування</label>
+        <select id="sort">
+          <option value="default">За замовчуванням</option>
+          <option value="price-asc">Ціна: від дешевших</option>
+          <option value="price-desc">Ціна: від дорожчих</option>
+          <option value="name">За назвою</option>
+        </select>
+      </p>
+    </div>
 
     <section aria-labelledby="list-title">
       <h2 id="list-title">Усі позиції</h2>
-      <div class="grid">
-        <article>
-          <picture>
-            <source type="image/webp" srcset="images/espresso-400.webp 400w, images/espresso-800.webp 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw">
-            <img src="images/espresso-400.jpg" srcset="images/espresso-400.jpg 400w, images/espresso-800.jpg 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw" width="400" height="300" alt="Еспресо" loading="lazy">
-          </picture>
-          <h3><a href="item.html">Еспресо</a></h3>
-          <p>Класичний міцний еспресо</p>
-          <p><data value="60">60 грн</data></p>
-          <button type="button">Додати в кошик</button>
-        </article>
-        <article>
-          <picture>
-            <source type="image/webp" srcset="images/americano-400.webp 400w, images/americano-800.webp 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw">
-            <img src="images/americano-400.jpg" srcset="images/americano-400.jpg 400w, images/americano-800.jpg 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw" width="400" height="300" alt="Американо" loading="lazy">
-          </picture>
-          <h3><a href="item.html">Американо</a></h3>
-          <p>Еспресо з гарячою водою</p>
-          <p><data value="70">70 грн</data></p>
-          <button type="button">Додати в кошик</button>
-        </article>
-        <article>
-          <picture>
-            <source type="image/webp" srcset="images/cappuccino-400.webp 400w, images/cappuccino-800.webp 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw">
-            <img src="images/cappuccino-400.jpg" srcset="images/cappuccino-400.jpg 400w, images/cappuccino-800.jpg 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw" width="400" height="300" alt="Капучино" loading="lazy">
-          </picture>
-          <h3><a href="item.html">Капучино</a></h3>
-          <p>Еспресо, молоко й щільна пінка</p>
-          <p><data value="85">85 грн</data></p>
-          <button type="button">Додати в кошик</button>
-        </article>
-        <article>
-          <picture>
-            <source type="image/webp" srcset="images/latte-400.webp 400w, images/latte-800.webp 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw">
-            <img src="images/latte-400.jpg" srcset="images/latte-400.jpg 400w, images/latte-800.jpg 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw" width="400" height="300" alt="Лате" loading="lazy">
-          </picture>
-          <h3><a href="item.html">Лате</a></h3>
-          <p>М’яка кава з великою кількістю молока</p>
-          <p><data value="90">90 грн</data></p>
-          <button type="button">Додати в кошик</button>
-        </article>
-        <article>
-          <picture>
-            <source type="image/webp" srcset="images/flatwhite-400.webp 400w, images/flatwhite-800.webp 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw">
-            <img src="images/flatwhite-400.jpg" srcset="images/flatwhite-400.jpg 400w, images/flatwhite-800.jpg 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw" width="400" height="300" alt="Флет вайт" loading="lazy">
-          </picture>
-          <h3><a href="item.html">Флет вайт</a></h3>
-          <p>Подвійний еспресо з оксамитовим молоком</p>
-          <p><data value="95">95 грн</data></p>
-          <button type="button">Додати в кошик</button>
-        </article>
-        <article>
-          <picture>
-            <source type="image/webp" srcset="images/croissant-400.webp 400w, images/croissant-800.webp 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw">
-            <img src="images/croissant-400.jpg" srcset="images/croissant-400.jpg 400w, images/croissant-800.jpg 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw" width="400" height="300" alt="Круасан" loading="lazy">
-          </picture>
-          <h3><a href="item.html">Круасан</a></h3>
-          <p>Свіжий масляний круасан</p>
-          <p><data value="65">65 грн</data></p>
-          <button type="button">Додати в кошик</button>
-        </article>
-      </div>
+      <p id="status" role="status" aria-live="polite"></p>
+      <div id="menu-grid" class="grid"></div>
     </section>
   </main>
+
+  <dialog id="item-modal">
+    <h2 data-modal-title></h2>
+    <p data-modal-desc></p>
+    <p data-modal-price></p>
+    <button type="button" data-modal-add>У кошик</button>
+    <button type="button" data-close>Закрити</button>
+  </dialog>
 
   <footer>
     <p>© 2026 Brew &amp; Bean. Київ, вул. Прикладна, 1.</p>
     <p><a href="tel:+380441234567">+38&nbsp;(044)&nbsp;123&#8209;45&#8209;67</a> · <a href="mailto:hello@brewandbean.example">hello@brewandbean.example</a></p>
   </footer>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>

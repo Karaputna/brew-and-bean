@@ -13,16 +13,16 @@
 <body>
   <a href="#main">Перейти до основного вмісту</a>
   <header>
-    <p><a href="index.html">Brew &amp; Bean</a></p>
-    <nav aria-label="Головна навігація">
-      <ul>
-          <li><a href="index.html">Головна</a></li>
-          <li><a href="menu.html" aria-current="page">Меню</a></li>
-          <li><a href="cart.html">Кошик</a></li>
-          <li><a href="contacts.html">Контакти</a></li>
-      </ul>
-    </nav>
-  </header>
+  <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Меню</button>
+
+  <nav id="site-nav" aria-label="Головна навігація">
+    <a href="index.html">Головна</a>
+    <a href="menu.html">Меню</a>
+    <a href="cart.html">Кошик (<span data-cart-count>0</span>)</a>
+  </nav>
+
+  <button type="button" data-theme-toggle></button>
+</header>
 
   <main id="main">
     <nav aria-label="Хлібні крихти">
@@ -68,5 +68,6 @@
     <p>© 2026 Brew &amp; Bean. Київ, вул. Прикладна, 1.</p>
     <p><a href="tel:+380441234567">+38&nbsp;(044)&nbsp;123&#8209;45&#8209;67</a> · <a href="mailto:hello@brewandbean.example">hello@brewandbean.example</a></p>
   </footer>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>

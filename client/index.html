@@ -12,17 +12,18 @@
 </head>
 <body>
   <a href="#main">Перейти до основного вмісту</a>
-  <header>
-    <p><a href="index.html">Brew &amp; Bean</a></p>
-    <nav aria-label="Головна навігація">
-      <ul>
-          <li><a href="index.html" aria-current="page">Головна</a></li>
-          <li><a href="menu.html">Меню</a></li>
-          <li><a href="cart.html">Кошик</a></li>
-          <li><a href="contacts.html">Контакти</a></li>
-      </ul>
-    </nav>
-  </header>
+
+ <header>
+  <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Меню</button>
+
+  <nav id="site-nav" aria-label="Головна навігація">
+    <a href="index.html">Головна</a>
+    <a href="menu.html">Меню</a>
+    <a href="cart.html">Кошик (<span data-cart-count>0</span>)</a>
+  </nav>
+
+  <button type="button" data-theme-toggle></button>
+</header>
 
   <main id="main">
     <section aria-labelledby="hero-title">
@@ -41,7 +42,7 @@
           </picture>
           <h3><a href="item.html">Капучино</a></h3>
           <p>Еспресо, молоко й щільна пінка</p>
-          <p><data value="85">85 грн</data></p>
+          <p><data value="55">55 грн</data></p>
           <button type="button">Додати в кошик</button>
         </article>
         <article>
@@ -51,7 +52,7 @@
           </picture>
           <h3><a href="item.html">Лате</a></h3>
           <p>М’яка кава з великою кількістю молока</p>
-          <p><data value="90">90 грн</data></p>
+          <p><data value="60">60 грн</data></p>
           <button type="button">Додати в кошик</button>
         </article>
         <article>
@@ -61,7 +62,7 @@
           </picture>
           <h3><a href="item.html">Флет вайт</a></h3>
           <p>Подвійний еспресо з оксамитовим молоком</p>
-          <p><data value="95">95 грн</data></p>
+          <p><data value="65">65 грн</data></p>
           <button type="button">Додати в кошик</button>
         </article>
       </div>
@@ -77,5 +78,6 @@
     <p>© 2026 Brew &amp; Bean. Київ, вул. Прикладна, 1.</p>
     <p><a href="tel:+380441234567">+38&nbsp;(044)&nbsp;123&#8209;45&#8209;67</a> · <a href="mailto:hello@brewandbean.example">hello@brewandbean.example</a></p>
   </footer>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>

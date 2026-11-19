@@ -1,0 +1,14 @@
+[
+  { "id": 1, "name": "Еспресо", "category": "Кава", "price": 60, "description": "Класичний міцний еспресо", "image": "espresso" },
+  { "id": 2, "name": "Капучино", "category": "Кава", "price": 85, "description": "Еспресо, молоко й щільна пінка", "image": "cappuccino" },
+  { "id": 3, "name": "Лате", "category": "Кава", "price": 90, "description": "М’яка кава з великою кількістю молока", "image": "latte" },
+  { "id": 4, "name": "Флет вайт", "category": "Кава", "price": 95, "description": "Подвійний еспресо з оксамитовим молоком", "image": "flatwhite" },
+  { "id": 5, "name": "Американо", "category": "Кава", "price": 70, "description": "Еспресо з гарячою водою", "image": "americano" },
+  { "id": 6, "name": "Зелений чай", "category": "Чай", "price": 50, "description": "Китайський чай із легким трав’яним смаком" },
+  { "id": 7, "name": "Чорний чай з бергамотом", "category": "Чай", "price": 50, "description": "Ароматний чай у чайнику на дві чашки" },
+  { "id": 8, "name": "Чізкейк", "category": "Десерти", "price": 110, "description": "Ніжний сирний десерт із ягідним соусом" },
+  { "id": 9, "name": "Круасан", "category": "Десерти", "price": 65, "description": "Свіжий масляний круасан", "image": "croissant" },
+  { "id": 10, "name": "Тірамісу", "category": "Десерти", "price": 120, "description": "Італійський десерт із маскарпоне й какао" },
+  { "id": 11, "name": "Сирники", "category": "Сніданки", "price": 130, "description": "Три сирники зі сметаною та медом" },
+  { "id": 12, "name": "Омлет із сиром", "category": "Сніданки", "price": 115, "description": "Омлет із трьох яєць, сир і зелень" }
+]
