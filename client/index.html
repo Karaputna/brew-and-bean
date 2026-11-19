@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Головна — Brew &amp; Bean</title>
+  <meta name="description" content="Кав’ярня Brew & Bean: онлайн-меню та швидке замовлення.">
+</head>
+<body>
+  <a href="#main">Перейти до основного вмісту</a>
+  <header>
+    <p><a href="index.html">Brew &amp; Bean</a></p>
+    <nav aria-label="Головна навігація">
+      <ul>
+          <li><a href="index.html" aria-current="page">Головна</a></li>
+          <li><a href="menu.html">Меню</a></li>
+          <li><a href="cart.html">Кошик</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="hero-title">
+      <h1 id="hero-title">Заварюємо тепло щодня</h1>
+      <p>Свіжообсмажена кава та випічка. Обирайте в онлайн-меню й забирайте без черги.</p>
+      <p><a href="menu.html">Дивитися меню</a></p>
+    </section>
+
+    <section aria-labelledby="popular-title">
+      <h2 id="popular-title">Популярне</h2>
+        <article>
+          <picture>
+            <source type="image/webp" srcset="images/cappuccino-400.webp 400w, images/cappuccino-800.webp 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw">
+            <img src="images/cappuccino-400.jpg" srcset="images/cappuccino-400.jpg 400w, images/cappuccino-800.jpg 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw" width="400" height="300" alt="Капучино" loading="lazy">
+          </picture>
+          <h3><a href="item.html">Капучино</a></h3>
+          <p>Еспресо, молоко й щільна пінка</p>
+          <p><data value="85">85 грн</data></p>
+          <button type="button">Додати в кошик</button>
+        </article>
+        <article>
+          <picture>
+            <source type="image/webp" srcset="images/latte-400.webp 400w, images/latte-800.webp 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw">
+            <img src="images/latte-400.jpg" srcset="images/latte-400.jpg 400w, images/latte-800.jpg 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw" width="400" height="300" alt="Лате" loading="lazy">
+          </picture>
+          <h3><a href="item.html">Лате</a></h3>
+          <p>М’яка кава з великою кількістю молока</p>
+          <p><data value="90">90 грн</data></p>
+          <button type="button">Додати в кошик</button>
+        </article>
+        <article>
+          <picture>
+            <source type="image/webp" srcset="images/flatwhite-400.webp 400w, images/flatwhite-800.webp 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw">
+            <img src="images/flatwhite-400.jpg" srcset="images/flatwhite-400.jpg 400w, images/flatwhite-800.jpg 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw" width="400" height="300" alt="Флет вайт" loading="lazy">
+          </picture>
+          <h3><a href="item.html">Флет вайт</a></h3>
+          <p>Подвійний еспресо з оксамитовим молоком</p>
+          <p><data value="95">95 грн</data></p>
+          <button type="button">Додати в кошик</button>
+        </article>
+    </section>
+
+    <section aria-labelledby="about-title">
+      <h2 id="about-title">Про нас</h2>
+      <p>Ми невелика кав’ярня в центрі міста. Працюємо щодня з 08:00 до 21:00.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Brew &amp; Bean. Київ, вул. Прикладна, 1.</p>
+    <p><a href="tel:+380441234567">+38&nbsp;(044)&nbsp;123&#8209;45&#8209;67</a> · <a href="mailto:hello@brewandbean.example">hello@brewandbean.example</a></p>
+  </footer>
+</body>
+</html>

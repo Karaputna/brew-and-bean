@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакти — Brew &amp; Bean</title>
+  <meta name="description" content="Адреса, графік роботи та зворотний зв’язок кав’ярні Brew & Bean.">
+</head>
+<body>
+  <a href="#main">Перейти до основного вмісту</a>
+  <header>
+    <p><a href="index.html">Brew &amp; Bean</a></p>
+    <nav aria-label="Головна навігація">
+      <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="menu.html">Меню</a></li>
+          <li><a href="cart.html">Кошик</a></li>
+          <li><a href="contacts.html" aria-current="page">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>Контакти</h1>
+    <section aria-labelledby="where-title">
+      <h2 id="where-title">Як нас знайти</h2>
+      <address>
+        Київ, вул. Прикладна, 1<br>
+        <a href="tel:+380441234567">+38&nbsp;(044)&nbsp;123&#8209;45&#8209;67</a><br>
+        <a href="mailto:hello@brewandbean.example">hello@brewandbean.example</a>
+      </address>
+      <h3>Години роботи</h3>
+      <p>Щодня з <time datetime="08:00">08:00</time> до <time datetime="21:00">21:00</time></p>
+    </section>
+
+    <section aria-labelledby="feedback-title">
+      <h2 id="feedback-title">Напишіть нам</h2>
+      <form action="contacts.html" method="post">
+        <p>
+          <label for="f-name">Ім’я</label>
+          <input type="text" id="f-name" name="name" required>
+        </p>
+        <p>
+          <label for="f-email">Електронна пошта</label>
+          <input type="email" id="f-email" name="email" required>
+        </p>
+        <p>
+          <label for="f-msg">Повідомлення</label>
+          <textarea id="f-msg" name="message" rows="4" required></textarea>
+        </p>
+        <button type="submit">Надіслати</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Brew &amp; Bean. Київ, вул. Прикладна, 1.</p>
+    <p><a href="tel:+380441234567">+38&nbsp;(044)&nbsp;123&#8209;45&#8209;67</a> · <a href="mailto:hello@brewandbean.example">hello@brewandbean.example</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Меню — Brew &amp; Bean</title>
+  <meta name="description" content="Меню кав’ярні Brew & Bean: кава та випічка.">
+</head>
+<body>
+  <a href="#main">Перейти до основного вмісту</a>
+  <header>
+    <p><a href="index.html">Brew &amp; Bean</a></p>
+    <nav aria-label="Головна навігація">
+      <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="menu.html" aria-current="page">Меню</a></li>
+          <li><a href="cart.html">Кошик</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>Меню</h1>
+    <form action="menu.html" method="get" role="search">
+      <p>
+        <label for="search">Пошук за назвою</label>
+        <input type="search" id="search" name="q" placeholder="Наприклад, лате">
+      </p>
+      <p>
+        <label for="category">Категорія</label>
+        <select id="category" name="category">
+          <option value="">Усі</option>
+          <option value="coffee">Кава</option>
+          <option value="bakery">Випічка</option>
+        </select>
+      </p>
+      <button type="submit">Знайти</button>
+    </form>
+
+    <section aria-labelledby="list-title">
+      <h2 id="list-title">Усі позиції</h2>
+        <article>
+          <picture>
+            <source type="image/webp" srcset="images/espresso-400.webp 400w, images/espresso-800.webp 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw">
+            <img src="images/espresso-400.jpg" srcset="images/espresso-400.jpg 400w, images/espresso-800.jpg 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw" width="400" height="300" alt="Еспресsо" loading="lazy">
+          </picture>
+          <h3><a href="item.html">Еспресsо</a></h3>
+          <p>Класичний міцний еспресо</p>
+          <p><data value="60">60 грн</data></p>
+          <button type="button">Додати в кошик</button>
+        </article>
+        <article>
+          <picture>
+            <source type="image/webp" srcset="images/americano-400.webp 400w, images/americano-800.webp 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw">
+            <img src="images/americano-400.jpg" srcset="images/americano-400.jpg 400w, images/americano-800.jpg 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw" width="400" height="300" alt="Американо" loading="lazy">
+          </picture>
+          <h3><a href="item.html">Американо</a></h3>
+          <p>Еспресо з гарячою водою</p>
+          <p><data value="70">70 грн</data></p>
+          <button type="button">Додати в кошик</button>
+        </article>
+        <article>
+          <picture>
+            <source type="image/webp" srcset="images/cappuccino-400.webp 400w, images/cappuccino-800.webp 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw">
+            <img src="images/cappuccino-400.jpg" srcset="images/cappuccino-400.jpg 400w, images/cappuccino-800.jpg 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw" width="400" height="300" alt="Капучино" loading="lazy">
+          </picture>
+          <h3><a href="item.html">Капучино</a></h3>
+          <p>Еспресо, молоко й щільна пінка</p>
+          <p><data value="85">85 грн</data></p>
+          <button type="button">Додати в кошик</button>
+        </article>
+        <article>
+          <picture>
+            <source type="image/webp" srcset="images/latte-400.webp 400w, images/latte-800.webp 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw">
+            <img src="images/latte-400.jpg" srcset="images/latte-400.jpg 400w, images/latte-800.jpg 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw" width="400" height="300" alt="Лате" loading="lazy">
+          </picture>
+          <h3><a href="item.html">Лате</a></h3>
+          <p>М’яка кава з великою кількістю молока</p>
+          <p><data value="90">90 грн</data></p>
+          <button type="button">Додати в кошик</button>
+        </article>
+        <article>
+          <picture>
+            <source type="image/webp" srcset="images/flatwhite-400.webp 400w, images/flatwhite-800.webp 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw">
+            <img src="images/flatwhite-400.jpg" srcset="images/flatwhite-400.jpg 400w, images/flatwhite-800.jpg 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw" width="400" height="300" alt="Флет вайт" loading="lazy">
+          </picture>
+          <h3><a href="item.html">Флет вайт</a></h3>
+          <p>Подвійний еспресо з оксамитовим молоком</p>
+          <p><data value="95">95 грн</data></p>
+          <button type="button">Додати в кошик</button>
+        </article>
+        <article>
+          <picture>
+            <source type="image/webp" srcset="images/croissant-400.webp 400w, images/croissant-800.webp 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw">
+            <img src="images/croissant-400.jpg" srcset="images/croissant-400.jpg 400w, images/croissant-800.jpg 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw" width="400" height="300" alt="Круасан" loading="lazy">
+          </picture>
+          <h3><a href="item.html">Круасан</a></h3>
+          <p>Свіжий масляний круасан</p>
+          <p><data value="65">65 грн</data></p>
+          <button type="button">Додати в кошик</button>
+        </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Brew &amp; Bean. Київ, вул. Прикладна, 1.</p>
+    <p><a href="tel:+380441234567">+38&nbsp;(044)&nbsp;123&#8209;45&#8209;67</a> · <a href="mailto:hello@brewandbean.example">hello@brewandbean.example</a></p>
+  </footer>
+</body>
+</html>
