@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Кошик — Brew &amp; Bean</title>
+  <meta name="description" content="Кошик і оформлення замовлення в Brew & Bean.">
+</head>
+<body>
+  <a href="#main">Перейти до основного вмісту</a>
+  <header>
+    <p><a href="index.html">Brew &amp; Bean</a></p>
+    <nav aria-label="Головна навігація">
+      <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="menu.html">Меню</a></li>
+          <li><a href="cart.html" aria-current="page">Кошик</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h1>Кошик</h1>
+    <section aria-labelledby="items-title">
+      <h2 id="items-title">Ваше замовлення</h2>
+      <table>
+        <caption>Позиції в кошику</caption>
+        <thead>
+          <tr><th scope="col">Назва</th><th scope="col">Ціна</th><th scope="col">Кількість</th><th scope="col">Сума</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Лате</th><td>90 грн</td><td>2</td><td>180 грн</td></tr>
+          <tr><th scope="row">Круасан</th><td>65 грн</td><td>1</td><td>65 грн</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><th scope="row" colspan="3">Разом</th><td>245 грн</td></tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section aria-labelledby="order-title">
+      <h2 id="order-title">Оформлення</h2>
+      <form action="cart.html" method="post">
+        <p>
+          <label for="name">Ім’я</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+        </p>
+        <p>
+          <label for="phone">Телефон</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+380..." required>
+        </p>
+        <p>
+          <label for="time">Час отримання</label>
+          <input type="time" id="time" name="time">
+        </p>
+        <p>
+          <label for="comment">Коментар</label>
+          <textarea id="comment" name="comment" rows="3"></textarea>
+        </p>
+        <p>
+          <input type="checkbox" id="agree" name="agree" required>
+          <label for="agree">Погоджуюсь на обробку персональних даних</label>
+        </p>
+        <button type="submit">Підтвердити замовлення</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Brew &amp; Bean. Київ, вул. Прикладна, 1.</p>
+    <p><a href="tel:+380441234567">+38&nbsp;(044)&nbsp;123&#8209;45&#8209;67</a> · <a href="mailto:hello@brewandbean.example">hello@brewandbean.example</a></p>
+  </footer>
+</body>
+</html>
