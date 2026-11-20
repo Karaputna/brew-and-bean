@@ -1,83 +1,13 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Головна — Brew &amp; Bean</title>
-  <meta name="description" content="Кав’ярня Brew & Bean: онлайн-меню та швидке замовлення.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <a href="#main">Перейти до основного вмісту</a>
-
- <header>
-  <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Меню</button>
-
-  <nav id="site-nav" aria-label="Головна навігація">
-    <a href="index.html">Головна</a>
-    <a href="menu.html">Меню</a>
-    <a href="cart.html">Кошик (<span data-cart-count>0</span>)</a>
-  </nav>
-
-  <button type="button" data-theme-toggle></button>
-</header>
-
-  <main id="main">
-    <section aria-labelledby="hero-title">
-      <h1 id="hero-title">Заварюємо тепло щодня</h1>
-      <p>Свіжообсмажена кава та випічка. Обирайте в онлайн-меню й забирайте без черги.</p>
-      <p><a href="menu.html">Дивитися меню</a></p>
-    </section>
-
-    <section aria-labelledby="popular-title">
-      <h2 id="popular-title">Популярне</h2>
-      <div class="grid">
-        <article>
-          <picture>
-            <source type="image/webp" srcset="images/cappuccino-400.webp 400w, images/cappuccino-800.webp 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw">
-            <img src="images/cappuccino-400.jpg" srcset="images/cappuccino-400.jpg 400w, images/cappuccino-800.jpg 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw" width="400" height="300" alt="Капучино" loading="lazy">
-          </picture>
-          <h3><a href="item.html">Капучино</a></h3>
-          <p>Еспресо, молоко й щільна пінка</p>
-          <p><data value="55">55 грн</data></p>
-          <button type="button">Додати в кошик</button>
-        </article>
-        <article>
-          <picture>
-            <source type="image/webp" srcset="images/latte-400.webp 400w, images/latte-800.webp 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw">
-            <img src="images/latte-400.jpg" srcset="images/latte-400.jpg 400w, images/latte-800.jpg 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw" width="400" height="300" alt="Лате" loading="lazy">
-          </picture>
-          <h3><a href="item.html">Лате</a></h3>
-          <p>М’яка кава з великою кількістю молока</p>
-          <p><data value="60">60 грн</data></p>
-          <button type="button">Додати в кошик</button>
-        </article>
-        <article>
-          <picture>
-            <source type="image/webp" srcset="images/flatwhite-400.webp 400w, images/flatwhite-800.webp 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw">
-            <img src="images/flatwhite-400.jpg" srcset="images/flatwhite-400.jpg 400w, images/flatwhite-800.jpg 800w" sizes="(min-width: 900px) 25vw, (min-width: 600px) 45vw, 90vw" width="400" height="300" alt="Флет вайт" loading="lazy">
-          </picture>
-          <h3><a href="item.html">Флет вайт</a></h3>
-          <p>Подвійний еспресо з оксамитовим молоком</p>
-          <p><data value="65">65 грн</data></p>
-          <button type="button">Додати в кошик</button>
-        </article>
-      </div>
-    </section>
-
-    <section aria-labelledby="about-title">
-      <h2 id="about-title">Про нас</h2>
-      <p>Ми невелика кав’ярня в центрі міста. Працюємо щодня з 08:00 до 21:00.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2026 Brew &amp; Bean. Київ, вул. Прикладна, 1.</p>
-    <p><a href="tel:+380441234567">+38&nbsp;(044)&nbsp;123&#8209;45&#8209;67</a> · <a href="mailto:hello@brewandbean.example">hello@brewandbean.example</a></p>
-  </footer>
-  <script type="module" src="js/main.js"></script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>client</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

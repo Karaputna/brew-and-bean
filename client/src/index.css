@@ -1,0 +1,306 @@
+﻿* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f1e8;
+  color: #38251b;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header {
+  background: #4b3025;
+  color: white;
+  padding: 22px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.logo {
+  color: #f4d5a6;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navigation a:hover,
+.navigation a.active {
+  color: #f4c98b;
+}
+
+.main-content {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 65px 25px;
+  flex: 1;
+}
+
+h1 {
+  color: #593b2b;
+  font-size: 38px;
+}
+
+p {
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+a {
+  color: #9a6038;
+}
+
+button {
+  background: #795039;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #593b2b;
+}
+
+.contact-form {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: 1px solid #d5c2ae;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+.site-footer {
+  background: #4b3025;
+  color: white;
+  text-align: center;
+  padding: 18px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+  }
+
+  .navigation {
+    justify-content: center;
+    gap: 14px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
+
+/* Каталог товарів */
+
+.menu-page {
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 450px;
+  margin: 20px 0;
+}
+
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+.category-filters button.selected {
+  background: #b47a4b;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 25px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(60, 35, 20, 0.12);
+  padding-bottom: 20px;
+}
+
+.product-icon {
+  background: #ead9c5;
+  font-size: 65px;
+  text-align: center;
+  padding: 30px;
+}
+
+.product-info {
+  padding: 18px;
+}
+
+.product-info h3 {
+  color: #593b2b;
+}
+
+.product-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.product-actions a {
+  color: #795039;
+}
+
+.cart-message {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+@media (max-width: 750px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Кошик */
+
+.cart-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(60, 35, 20, 0.10);
+}
+
+.cart-item > span {
+  font-size: 35px;
+}
+
+.cart-item button {
+  margin: 4px;
+  padding: 8px 13px;
+}
+
+/* Форма оформлення замовлення */
+.checkout-form {
+  max-width: 550px;
+  margin: 35px auto;
+  padding: 25px;
+  background: #fffaf3;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(60, 35, 20, 0.1);
+}
+
+.checkout-form h2 {
+  color: #5c3825;
+  margin-bottom: 20px;
+}
+
+.checkout-form label {
+  display: block;
+  margin: 14px 0 6px;
+  color: #5c3825;
+  font-weight: 600;
+}
+
+.checkout-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d8c3ad;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.checkout-form input:focus {
+  outline: 2px solid #a87950;
+  border-color: #a87950;
+}
+
+.checkout-form button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 14px;
+  background: #6f422b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.checkout-form button:hover {
+  background: #4d2c1c;
+}
